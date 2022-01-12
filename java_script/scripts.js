@@ -117,7 +117,7 @@ $(document).ready(function (){
             body: JSON.stringify(formData)
         })
             .then(function (response) {
-                alert("Ñîîáùåíèå îòïðàâëåíî");
+                alert("Сообщение отправлено!!!");
                 data.forEach((element) => { element.value = ""; });
                 $("#check").prop("checked", false);
                 $("#submitButton").prop("disabled", true);
