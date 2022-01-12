@@ -108,7 +108,7 @@ $(document).ready(function (){
 
     let data = document.querySelectorAll(".info");
     const ajaxSend = (formData) => {
-        fetch("https://formcarry.com/s/EzbPKuFdyzV", {
+        fetch("https://formcarry.com/s/4K9fi-vJPgy", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -117,7 +117,7 @@ $(document).ready(function (){
             body: JSON.stringify(formData)
         })
             .then(function (response) {
-                alert("Ñîîáùåíèå îòïðàâëåíî");
+                alert("Ã‘Ã®Ã®Ã¡Ã¹Ã¥Ã­Ã¨Ã¥ Ã®Ã²Ã¯Ã°Ã Ã¢Ã«Ã¥Ã­Ã®");
                 data.forEach((element) => { element.value = ""; });
                 $("#check").prop("checked", false);
                 $("#submitButton").prop("disabled", true);
